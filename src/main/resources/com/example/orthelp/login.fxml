@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20" prefHeight="200" prefWidth="300" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.orthelp.Login">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Login" styleClass="label-title"/>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Username:" styleClass="label-form"/>
+        <TextField fx:id="usernameField" styleClass="text-field-form"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Password:" styleClass="label-form"/>
+        <PasswordField fx:id="passwordField" styleClass="text-field-form"/>
+    </HBox>
+
+    <Button text="Login" onAction="#handleLogin" styleClass="login-button"/>
+</VBox>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.orthelp.MyInformation"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="@style.css">
+
+    <VBox spacing="10" layoutX="50" layoutY="50" alignment="TOP_CENTER" styleClass="vbox-style">
+        <Label fx:id="classLabel" text="Class: " styleClass="info-label"/>
+        <Label fx:id="firstNameLabel" text="First Name: " styleClass="info-label"/>
+        <Label fx:id="lastNameLabel" text="Last Name: " styleClass="info-label"/>
+        <Label fx:id="emailLabel" text="Email: " styleClass="info-label"/>
+    </VBox>
+
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.orthelp.Statisitics" prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <StackPane fx:id="chartContainer" layoutX="50" layoutY="50" prefHeight="300.0" prefWidth="500.0">
+            <!-- Les graphiques seront ajoutés dynamiquement -->
+            <LineChart fx:id="lineChart1" visible="false">
+                <xAxis><CategoryAxis label="Catégories" /></xAxis>
+                <yAxis><NumberAxis label="Valeurs" /></yAxis>
+            </LineChart>
+            <LineChart fx:id="lineChart2" visible="false">
+                <xAxis><CategoryAxis label="Catégories" /></xAxis>
+                <yAxis><NumberAxis label="Valeurs" /></yAxis>
+            </LineChart>
+            <LineChart fx:id="lineChart3" visible="false">
+                <xAxis><CategoryAxis label="Catégories" /></xAxis>
+                <yAxis><NumberAxis label="Valeurs" /></yAxis>
+            </LineChart>
+        </StackPane>
+        <Button fx:id="previousButton" layoutX="10" layoutY="200" text="Précédent" onAction="#handlePrevious"/>
+        <Button fx:id="nextButton" layoutX="540" layoutY="200" text="Suivant" onAction="#handleNext"/>
+    </children>
+</AnchorPane>

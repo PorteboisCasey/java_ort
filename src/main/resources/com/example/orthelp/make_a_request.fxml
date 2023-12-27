@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="viewConcordance" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.orthelp.MakeARequest">
+
+    <VBox alignment="CENTER" layoutX="50" layoutY="50" spacing="20">
+
+        <Label text="Choisis une matière" styleClass="header-label"/>
+        <ComboBox fx:id="subjectComboBox" promptText="Choisis une matière">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Subject 1" />
+                    <String fx:value="Subject 2" />
+                    <String fx:value="Subject 3" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Label text="Sous matières" styleClass="header-label"/>
+        <ComboBox fx:id="MatiereComboBox" promptText="Sous matières">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Sub-Subject A" />
+                    <String fx:value="Sub-Subject B" />
+                    <String fx:value="Sub-Subject C" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Label text="Classe" styleClass="header-label"/>
+        <ComboBox fx:id="classComboBox" promptText="Classe">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Class 1" />
+                    <String fx:value="Class 2" />
+                    <String fx:value="Class 3" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Button fx:id="RequestButton" text="Envoyer" onAction="#onRequestButtonClick"/>
+    </VBox>
+</AnchorPane>

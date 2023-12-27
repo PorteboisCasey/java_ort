@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.orthelp.MySkills"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox spacing="10" layoutX="350" layoutY="50" alignment="CENTER">
+        <ListView fx:id="skillsListView" />
+        <HBox spacing="10">
+            <ComboBox fx:id="matiereComboBox" promptText="Select a Matiere" />
+            <ComboBox fx:id="sousMatiereComboBox" promptText="Select a Sous Matiere" />
+        </HBox>
+        <TextField fx:id="skillsTextField" promptText="Enter Your Skills" />
+        <Button text="Add Skill" onAction="#onAddSkill"/>
+    </VBox>
+
+</AnchorPane>
